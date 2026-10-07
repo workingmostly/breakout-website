@@ -1,0 +1,52 @@
+@import "@fontsource/inter/latin-400.css";
+@import "@fontsource/inter/latin-500.css";
+@import "@fontsource/inter/latin-600.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 98%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --card: 0 0% 100%;
+  --primary: 14 100% 57%;
+  --primary-foreground: 0 0% 100%;
+  --primary-dark: 14 100% 50%;
+  --secondary: 210 40% 98%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --accent: 210 40% 98%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --border: 214.3 31.8% 91.4%;
+  --ring: 14 100% 57%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.btn-gradient {
+  background: linear-gradient(180deg, #fd5600 0%, #ff2709 57.56%, #ff221e 100%) !important;
+  background-color: #fd5600 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(180deg, #e54d00 0%, #e62208 57.56%, #e61e1b 100%) !important;
+  background-color: #e54d00 !important;
+  color: white !important;
+}
+
